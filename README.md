@@ -22,11 +22,17 @@ Raw CSV → Databricks (Delta Lake) → dbt (staging → intermediate → mart) 
 ## Project Structure
 
 ├── models/
+
 │   ├── staging/        # cleaned, typed source data
+
 │   ├── intermediate/   # business logic (fraud flags, balance checks)
+
 │   └── marts/          # final aggregated tables for analysis
+
 ├── tests/               # dbt data quality tests
+
 ├── notebooks/           # Databricks exploration notebooks
+
 └── README.md
 
 ## Data Quality & Testing
